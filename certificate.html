@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Certificates</title>
+    <link rel="stylesheet" href="certificate.css">
+</head>
+<body>
+    <header>
+       <u><i><h1>My Portfolio</h1></i></u>
+        <nav>
+            <a href="index1.html">Home</a>
+            <a href="certificates.html" class="active">Certificates</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-list">
+            <div class="certificate">
+               <h2>certificate 1</h2>
+                <p>hunar intern</p>
+                <button onclick="viewCertificate('certi.jpg')">View</button>
+            </div>
+            <div class="certificate">
+                <h2>certificate 2</h2>
+                <p>web develpment</p>
+                <button onclick="viewCertificate('certificate1.jpg')">View</button>
+            </div>
+            <div class="certificate">
+                <h2>certificate 3</h2>
+                <p>Machine learning project</p>
+                <button onclick="viewCertificate('certificate3.jpg')">View</button>
+            </div>
+            <div class="certificate">
+                <h2>certificate 4</h2>
+                <p>Tally Erp 9</p>
+                <button onclick="viewCertificate('certificate4.jpg')">View</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="certificate.js"></script>
+</body>
+</html>
